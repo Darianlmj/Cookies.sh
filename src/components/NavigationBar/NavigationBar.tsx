@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './index.css';
 
 const NavigationBar = () => {
@@ -7,7 +9,9 @@ const NavigationBar = () => {
         <div id='Menu'>
             Topics
         </div>
-        <h1>Cookies.sh</h1>
+        <Link to={'/'} style={{ textDecoration: 'none', color: '#ffffff' }}>
+          <h1>Cookies.sh</h1>
+        </Link>
         <div>
             Login
         </div>
