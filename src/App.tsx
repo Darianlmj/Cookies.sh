@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import Footer from './components/Footer/Footer';
 import AboutCtf from './pages/AboutCtf/AboutCtf';
+import DDosInfoPage from './pages/DDosInfoPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <NavigationBar/>
       <Switch>
         <Route path='/' component={HomePage} exact/>
+        <Route path='/post/2' component={DDosInfoPage} exact/>
         <Route path='/post/3' component={AboutCtf} exact/>
       </Switch>
       <Footer/>

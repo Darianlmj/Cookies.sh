@@ -14,7 +14,7 @@ const posts = [
         title: "Security Concepts",
         tag: "Experience",
         description: `
-            Based on the OWASP top 10 list. Coming Soon.
+            Currently has info on DDos Attack. More coming soon.
         `
     },
     {
