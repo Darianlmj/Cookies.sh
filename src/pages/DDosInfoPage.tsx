@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from '@mui/material';
-import DDos_1 from '../assets/DDos_1.png';
-import DDos_2 from '../assets/DDos_2.png';
+import DDos_1 from '../assets/DDosInfo/DDos_1.png';
+import DDos_2 from '../assets/DDosInfo/DDos_2.png';
 
 const DDosInfoPage = () => {
   return (
