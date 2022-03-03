@@ -6,6 +6,7 @@ import getPosts from './PostsData';
 import '../style/HomePageStyle.css'
 
 const HomePage = () => {
+    document.title = "Cookies.sh"; 
 
     const posts = getPosts();   
 
