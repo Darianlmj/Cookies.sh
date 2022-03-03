@@ -2,7 +2,7 @@ const posts = [
     {
         id: 1,
         title: "Warstories",
-        tag: "Project",
+        tag: "Storytime",
         description: `
             A collection of the most insane and daring attempts at penetration
             testing. Sourced from podcasts, videos, and articles. 
@@ -12,7 +12,7 @@ const posts = [
     {
         id: 2,
         title: "Security Concepts",
-        tag: "Experience",
+        tag: "Security Engineering",
         description: `
             Currently has info on DDos Attack. More coming soon.
         `
@@ -33,6 +33,15 @@ const posts = [
         description: `
             What happens when you are performing a pentest? Surely you don't 
             expect to hack someone's network without repercusions. Coming Soon.
+        `
+    },
+    {
+        id: 5,
+        title: "Setting Up a Kali Linux Virtual Machine",
+        tag: "Security Tools",
+        description: `
+            Ever wondered what a security professional uses at work? This is a 
+            comprehensive guide to setting up your hacking environment.
         `
     }
 ];
