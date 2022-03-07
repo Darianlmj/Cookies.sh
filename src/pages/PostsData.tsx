@@ -43,6 +43,14 @@ const posts = [
             Ever wondered what a security professional uses at work? This is a 
             comprehensive guide to setting up your hacking environment.
         `
+    },
+    {
+        id: 6,
+        title: "Challenge Writeups",
+        tag: "CTF",
+        description: `
+            Writeups to the challenges that I have done.
+        `
     }
 ];
 
