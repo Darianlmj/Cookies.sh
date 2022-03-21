@@ -25,7 +25,7 @@ const HomePage = () => {
                 {posts.map((post) => (
                     <Grid  xs={9} md={5} sx={{paddingBottom: {xs: 5}}}>
                         <Link to={`/post/${post.id}`} style={{ textDecoration: 'none'}}>
-                            <Card sx={{}}>
+                            <Card>
                                 <h3>{post.tag}</h3>
                                 <h1>{post.title}</h1>
                                 <p>{post.description}</p>

@@ -7,7 +7,7 @@ const DDosInfoPage = () => {
   return (
     <Container maxWidth='md'>
         <div style={{color: '#ffffff'}}>
-            <h1>DDos Attack</h1>
+            <h1 className='post-title'>DDos Attack</h1>
 
             <h3>What is it?</h3>
             <p>
@@ -43,7 +43,9 @@ const DDosInfoPage = () => {
                 see on your screen.
                 <br></br>
                 <br></br>
-                <img src={DDos_1} width='100%'></img>
+                <div className='image-container'>
+                    <img src={DDos_1} width='100%'></img>
+                </div>
                 <br></br>
                 <br></br>
                 When a DDos attack happens, a hacker will utilise a botnet to
@@ -59,7 +61,9 @@ const DDosInfoPage = () => {
                 effectively renders your website useless.
                 <br></br>
                 <br></br>
-                <img src={DDos_2} width='100%'></img>
+                <div className='image-container'>
+                    <img src={DDos_2} width='100%'></img>
+                </div>
             </p>
             
             <h3>How To Identify a DDos?</h3>

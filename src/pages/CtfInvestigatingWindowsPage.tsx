@@ -10,14 +10,17 @@ import Pic_7 from '../assets/InvestigatingWindows/Pic_7.png';
 import Pic_10 from '../assets/InvestigatingWindows/Pic_10.png';
 
 const CtfInvestigatingWindowsPage = () => {
+  document.title = "Cookies.sh | Investigating Windows";
+  window.scrollTo(0, 0);
+
   return (
     <Container style={{color: '#ffffff'}}>
-      <h1>
+      <h1 className='post-title'>
         Investigating Windows Page
       </h1>
       <p>
         This challenge was sourced from {'\u0020'}
-        <a href='https://tryhackme.com/room/investigatingwindows' style={{textDecoration: 'none'}}> 
+        <a className='internal-post-link' href='https://tryhackme.com/room/investigatingwindows'> 
           TryHackMe 
         </a>
         {'\u0020'} and is a very interesting forensics challenge to someone who uses a Mac.
@@ -30,11 +33,14 @@ const CtfInvestigatingWindowsPage = () => {
         <br></br>
         Connect to the machine using RDP. The credentials the machine are as 
         follows:
-        <br></br>
-        <br></br>
-        Username: Administrator
-        <br></br>
-        Password: letmein123!
+        <pre>
+          <code>
+            Username: Administrator
+            <br></br>
+            Password: letmein123!
+          </code>
+        </pre>
+
       </p>
       <p>
         There are quite a few questions here that we weill attempt to get 
@@ -47,9 +53,9 @@ const CtfInvestigatingWindowsPage = () => {
       <p>
         This was a simple starting point into the challenge. All we have to do
         is go to the Windows Setting and look for the About panel.
-        <br></br>
-        <br></br>
-        <img src={Pic_2} width="450px" height="250px"></img>
+        <div className='image-container'>
+          <img src={Pic_2} width="450px" height="250px"></img>
+        </div>
       </p>
 
       <h3>Question 2</h3>
@@ -69,9 +75,9 @@ const CtfInvestigatingWindowsPage = () => {
         there are a few "Login" categories listed there. Since there will be a 
         log when we initially booted up the machine, we just need to find the
         next Login log. That will give us info that Administrator logged in last.
-        <br></br>
-        <br></br>
-        <img src={Pic_3} width="700px" height="500px"></img>
+        <div className='image-container'>
+          <img src={Pic_3} width="700px" height="500px"></img>
+        </div>
       </p>
 
       <h3>Question 3</h3>
@@ -83,10 +89,10 @@ const CtfInvestigatingWindowsPage = () => {
         that there had to be a command that would easily give me this information.
         Doing a quick google search for "How to get last login info from user 
         in command prompt". This gave me the command I needed which was 
-        <code> net user John</code>
-        <br></br>
-        <br></br>
-        <img src={Pic_4} width="450px" height="450px"></img>
+        <pre><code> net user John</code></pre>
+        <div className='image-container'>
+          <img src={Pic_4} width="450px" height="450px"></img>
+        </div>
       </p>
 
       <h3>Question 4</h3>
@@ -95,9 +101,9 @@ const CtfInvestigatingWindowsPage = () => {
       <p>
         This one was easy, since the command propmt opened up by itself upon 
         starting the machine. Easy points!
-        <br></br>
-        <br></br>
-        <img src={Pic_1} width="450px" height="150px"></img>
+        <div className='image-container'>
+          <img src={Pic_1} width="450px" height="150px"></img>
+        </div>
       </p>
 
       <h3>Question 5</h3>
@@ -107,13 +113,13 @@ const CtfInvestigatingWindowsPage = () => {
         I wasn't really familiar with Windows and how they displayed admins and 
         other users in their file system so I didn't bother checking there.
         Instead, I just ran 
-        <code> net user </code>
+        <pre><code> net user </code></pre>
         which gave me a list of users in the system. Luckily, there weren't that
         many users so I could just brute force different combinations and that
         gave me the answer.
-        <br></br>
-        <br></br>
-        <img src={Pic_5} width="650px" height="150px"></img>
+        <div className='image-container'>
+          <img src={Pic_5} width="650px" height="150px"></img>
+        </div>
       </p>
 
       <h3>Question 6</h3>
@@ -128,9 +134,9 @@ const CtfInvestigatingWindowsPage = () => {
         to execute a very sus action everyday at 4.55pm. There was also another
         task name "Game Over" which was also sus... but that's a problem for 
         another question.
-        <br></br>
-        <br></br>
-        <img src={Pic_6} width="950px" height="600px"></img>
+        <div className='image-container'>
+          <img src={Pic_6} width="950px" height="600px"></img>
+        </div>
       </p>
 
       <h3>Question 7</h3>
@@ -150,10 +156,10 @@ const CtfInvestigatingWindowsPage = () => {
       <p>Never</p>
       <p>
         Similar to the question about John's last login, I used the command 
-        <code> net user Jenny</code>
-        <br></br>
-        <br></br>
-        <img src={Pic_7} width="450px" height="550px"></img>
+        <pre><code> net user Jenny</code></pre>
+        <div className='image-container'>
+          <img src={Pic_7} width="450px" height="550px"></img>
+        </div>
       </p>
 
       <h3>Question 10</h3>
@@ -182,7 +188,9 @@ const CtfInvestigatingWindowsPage = () => {
         special privileges to new logon.
         <br></br>
         <br></br>
-        <img src={Pic_10} width="750px" height="650px"></img>
+        <div className='image-container'>
+          <img src={Pic_10} width="750px" height="650px"></img>
+        </div>
       </p>
 
       <h3>Resources</h3>
