@@ -8,6 +8,7 @@ import NavigationBar from './components/NavigationBar/NavigationBar';
 import Footer from './components/Footer/Footer';
 import AboutCtf from './pages/AboutCtf/AboutCtf';
 import DDosInfoPage from './pages/DDosInfoPage';
+import MimikatzPage from './pages/MimikatzPage';
 
 import SettingUpKaliLinuxPage from './pages/SettingUpKaliLinuxPage';
 import CtfInvestigatingWindowsPage from './pages/CtfInvestigatingWindowsPage';
@@ -28,6 +29,7 @@ function App() {
         <Route path='/post/setting-up-kali-linux' component={SettingUpKaliLinuxPage} exact/>
         <Route path='/post/ddos-attacks' component={DDosInfoPage} exact/>
         <Route path='/post/investigating-windows' component={CtfInvestigatingWindowsPage} exact/>
+        <Route path='/post/mimikatz' component={MimikatzPage} exact/>
       </Switch>
       <Footer/>
     </Router>

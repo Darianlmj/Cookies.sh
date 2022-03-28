@@ -5,12 +5,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+code, .code-fragment {
   font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
 }
 
 pre code {
-  scrollbar-color: #666 #201c29;
+  scrollbar-color: #666 #222029;
   background: none;
   white-space: pre;
   display: block;
@@ -48,4 +48,9 @@ li {
 .internal-post-link {
   text-decoration: underline;
   color: red;
+}
+
+.code-fragment {
+  background: #4b4b4b;
+  padding: 0 5px;
 }
