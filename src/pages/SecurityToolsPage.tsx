@@ -22,7 +22,22 @@ const SecurityToolsPage = () => {
         <Link href='/post/mimikatz' style={{textDecoration:'none', width: '400px'}}>
           <Card>
             <h1>Mimikatz</h1>
-            <p>Learn how to pash the hash using Mimikatz. Coming Soon</p>
+            <p>Learn how to pash the hash using Mimikatz.</p>
+            <p style={{ fontWeight: 'bold' }}>
+              A demonstration of this was done as part of a lightning talk in my
+              Week 7 tutorials and provided a lot of useful insight into the
+              very awesome password rant done by Mark Sonn.
+            </p>
+          </Card> 
+        </Link>
+
+        <Link href='/post/remaining-anonymous' style={{textDecoration:'none', width: '400px'}}>
+          <Card>
+            <h1>Remaining Anonymous on the Web</h1>
+            <p>
+              VPNs, the TOR browser and other tools that you can use to maintain
+              near perfect anonymity on the web.
+            </p>
           </Card> 
         </Link>
       </div>

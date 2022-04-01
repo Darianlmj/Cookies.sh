@@ -15,6 +15,7 @@ import CtfInvestigatingWindowsPage from './pages/CtfInvestigatingWindowsPage';
 import SecurityToolsPage from './pages/SecurityToolsPage';
 import SecurityConceptsPage from './pages/SecurityConceptsPage';
 import ChallengeWriteupsPage from './pages/ChallengeWriteupsPage';
+import RemainingAnonymousPage from './pages/RemainingAnonymousPage';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path='/post/ddos-attacks' component={DDosInfoPage} exact/>
         <Route path='/post/investigating-windows' component={CtfInvestigatingWindowsPage} exact/>
         <Route path='/post/mimikatz' component={MimikatzPage} exact/>
+        <Route path='/post/remaining-anonymous' component={RemainingAnonymousPage} exact/>
       </Switch>
       <Footer/>
     </Router>

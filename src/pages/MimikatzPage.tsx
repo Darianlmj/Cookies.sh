@@ -1,10 +1,10 @@
-import { Container } from '@mui/material'
+import { Container, Box } from '@mui/material'
 import '../index.css'
 import React from 'react'
 
 const MimikatzPage = () => {
   return (
-    <Container  style={{ color: '#ffffff' }}>
+    <Container style={{ color: '#ffffff' }}>
       <h1 className='post-title'>Passing the Hash with Mimikatz</h1>
       <p>
         In this article, I'll walk you through how to use Mimikatz to obtain
@@ -15,6 +15,22 @@ const MimikatzPage = () => {
         phishing attack in order to get the same outcome but without needing
         physical access to the target's machine.
       </p>
+
+      <Box style={{ backgroundColor: 'white', color: 'black', padding: '10px', borderRadius: '10px' }}>
+        <h1>Reflection</h1>
+        <p>
+          From researching various topics about Mimikatz, passing the hash and
+          Windows Defenders to ultimately doing a lightning talk (more like a lightning demo)
+          about how to escalate privileges in Windows, I've learnt a lot about how
+          powerful a tool Windows firewall is to detect malware like Mimikatz and how
+          easy it was to hack someone's account when you have physical access (ie. GAME OVER!!!). The talk
+          I did also spawned a couple of interesting questions about the validity of
+          attacking a corporate network like how I demonstrated it. Spoiler alert:
+          unless you have physical access to the network, you chances of you doing this is low.
+          Even if you successfully manage to download Mimikatz, there are definitely going to be
+          all sorts of red flags going off in the company's IT department.
+        </p>
+      </Box>
       <h3>Pre Set Up</h3>
       <ul>
         <li>A target (preferably with consent)</li>
@@ -33,7 +49,7 @@ const MimikatzPage = () => {
         <li>Get the hash of the user we want to impersonate (in this case, it's <span className='code-fragment'>User</span>) and the domain of the <span className='code-fragment'>FakeUser</span> account.</li>
         <li>
           Use command:
-          <pre><code>sekurlsa::pth /user:User /domain:WINDEV2110EVAL /ntlm:[insert_hash_here]</code></pre>
+          <pre><code>sekurlsa::pth /user:User /domain:[insert_user_domain_here] /ntlm:[insert_hash_here]</code></pre>
         </li>
         <li>A new console opens up.</li>
         <li>Demonstrate that the system thinks we are still <span className='code-fragment'>FakeUser</span> but we definitely are <span className='code-fragment'>User</span>.</li>
