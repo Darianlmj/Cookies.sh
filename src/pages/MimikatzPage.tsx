@@ -56,6 +56,22 @@ const MimikatzPage = () => {
         <li>Now try changing the password and it will work.</li>
       </ol>
 
+      <p>
+        This is an pre-recording I did in case the lightning talk went sideways =)
+        If you can't view the recording below, use this link instead:
+        <br />
+        <a href='https://youtu.be/MLizeTI0jr4' className='internal-post-link'>Mimikatz Video</a>
+      </p>
+      <iframe
+        width="860"
+        height="515"
+        src="https://www.youtube.com/embed/MLizeTI0jr4"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      >
+      </iframe>
+
       <h3>Bonus: The Fancy Way</h3>
       <ol>
         <li>Launch Kali</li>
