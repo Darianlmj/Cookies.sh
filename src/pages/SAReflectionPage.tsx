@@ -3,7 +3,7 @@ import { Container } from '@mui/material'
 
 const SAReflectionPage = () => {
   return (
-    <Container style={{ color: '#ffffff', minHeight: '770px' }}>
+    <Container style={{ color: '#ffffff', minHeight: '770px', textAlign: 'justify' }}>
       <h1 className='post-title'>Something Awesome Report</h1>
       <h3>Overview</h3>
       <ol>
@@ -19,7 +19,7 @@ const SAReflectionPage = () => {
         <li>Reflection</li>
       </ol>
 
-      <h2>Section 1</h2>
+      <h2 style={{ textDecoration: 'underline' }}>Section 1</h2>
       <h3>1.1&nbsp;&nbsp;&nbsp;&nbsp; Project Overview</h3>
       <p>
       The project that I have chosen to do for my Something Awesome is a website 
@@ -42,7 +42,7 @@ const SAReflectionPage = () => {
         around the project.
       </p>
 
-      <h2>Section 2</h2>
+      <h2 style={{ textDecoration: 'underline' }}>Section 2</h2>
       <h3>2.1&nbsp;&nbsp;&nbsp;&nbsp; Security Concepts</h3>
       <p>
         This category aims to provide an in-depth explanation into some of the 
@@ -169,7 +169,7 @@ const SAReflectionPage = () => {
         <a href='https://cookies-sh.web.app/post/investigating-windows' className='internal-post-link'>https://cookies-sh.web.app/post/investigating-windows</a>
       </p>
 
-      <h2>Section 3</h2>
+      <h2 style={{ textDecoration: 'underline' }}>Section 3</h2>
       <h3>3.1&nbsp;&nbsp;&nbsp;&nbsp; Reflection</h3>
       <p>
         During the process of making this project, I have learnt a lot about the 
@@ -180,7 +180,7 @@ const SAReflectionPage = () => {
         course teaches and I'm really happy about it.
       </p>
 
-      <strong>Brainstorming</strong>
+      <strong style={{ textDecoration: 'underline' }}>Brainstorming</strong>
       <p>
         At first, I wanted to do a keylogger as my SA but I realised that I 
         didn't know how to go about doing that. Then when Richard mentioned 
@@ -189,17 +189,21 @@ const SAReflectionPage = () => {
         Thus, the idea of Cookies was born.
       </p>
 
-      <strong>Planning and Execution</strong>
+      <strong style={{ textDecoration: 'underline' }}>Planning and Execution</strong>
       <p>
         I wrote out the topics that I wanted to focus on in a to-do list. 
         Knowing that security is a very broad field, I went with the more 
         technical topics plus a non-technical one (Legal Side of Digital Security). 
         I then came up with a general research plan which was to find several 
         articles/podcasts/links and basically summarise it so that a regular 
-        person with no computing background could understand it.
+        person with no computing background could understand it. 
+        Then all I had to do was create the website 
+        (GitHub link:&nbsp;
+          <a href='https://github.com/Darianlmj/Cookies.sh' className='internal-post-link'>https://github.com/Darianlmj/Cookies.sh</a>
+        ).
       </p>
 
-      <strong>Time Allocation</strong>
+      <strong style={{ textDecoration: 'underline' }}>Time Allocation</strong>
       <p>
         The entire project took about 35 hours* or so in total. 
         The time spent to research and do each category are as follows:
@@ -216,7 +220,7 @@ const SAReflectionPage = () => {
         * Note that this is an estimation of the total time spent.
       </p>
 
-      <strong>Best Features</strong>
+      <strong style={{ textDecoration: 'underline' }}>Best Features</strong>
       <p>
         What I think I did the best in this project was the Security Tools 
         category because it was so fun to actually use the different tools and 
@@ -230,7 +234,7 @@ const SAReflectionPage = () => {
         article.
       </p>
       
-      <strong>Challenges</strong>
+      <strong style={{ textDecoration: 'underline' }}>Challenges</strong>
       <p>
         Originally, I set out with the intention of doing 2-3 articles a week. 
         However, as I came to realise later, this was not feasible at all. 
