@@ -1,12 +1,13 @@
 const posts = [
   {
     id: 1,
-    title: "Warstories",
-    tag: "Storytime",
+    title: "SA Report",
+    tag: "Report",
     description: `
-      A collection of the most insane and daring attempts at penetration
-      testing. Sourced from podcasts, videos, and articles. 
-      Coming Soon.
+      A high level overview of this website and a reflection on what I've learnt 
+      throughout this whole SA progress and how it has made me better. 
+      An alternative to the PDF submission as part of the SA grading.
+      
     `
   },
   {
@@ -14,16 +15,15 @@ const posts = [
     title: "Security Concepts",
     tag: "Security Engineering",
     description: `
-      Currently has info on DDos Attack. More coming soon.
+      Currently has info on DDos Attack.
     `
   },
   {
     id: 3,
-    title: "A beginner's guide to CTFs",
+    title: "CTF Tools",
     tag: "CTF",
     description: `
-      From Recon to Forensics, this is an all-encompasing guide to help
-      you tackle those tricky CTF cahllenges. Coming Soon.
+      A collection of helpful tools and links to help you on your CTF journey.
     `
   },
   {
@@ -32,7 +32,7 @@ const posts = [
     tag: "Cyber Law",
     description: `
       What happens when you are performing a pentest? Surely you don't 
-      expect to hack someone's network without repercusions. Coming Soon.
+      expect to hack someone's network without repercusions.
     `
   },
   {

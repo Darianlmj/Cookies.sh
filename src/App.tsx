@@ -16,6 +16,9 @@ import SecurityToolsPage from './pages/SecurityToolsPage';
 import SecurityConceptsPage from './pages/SecurityConceptsPage';
 import ChallengeWriteupsPage from './pages/ChallengeWriteupsPage';
 import RemainingAnonymousPage from './pages/RemainingAnonymousPage';
+import CybercrimePage from './pages/CybercrimePage';
+import LegalSidePage from './pages/LegalSidePage';
+import SAReflectionPage from './pages/SAReflectionPage';
 
 function App() {
   return (
@@ -23,8 +26,10 @@ function App() {
       <NavigationBar/>
       <Switch>
         <Route path='/' component={HomePage} exact/>
+        <Route path='/post/1' component={SAReflectionPage} exact/>
         <Route path='/post/2' component={SecurityConceptsPage} exact/>
         <Route path='/post/3' component={AboutCtf} exact/>
+        <Route path='/post/4' component={LegalSidePage} exact/>
         <Route path='/post/5' component={SecurityToolsPage} exact/>
         <Route path='/post/6' component={ChallengeWriteupsPage} exact/>
         <Route path='/post/setting-up-kali-linux' component={SettingUpKaliLinuxPage} exact/>
@@ -32,6 +37,7 @@ function App() {
         <Route path='/post/investigating-windows' component={CtfInvestigatingWindowsPage} exact/>
         <Route path='/post/mimikatz' component={MimikatzPage} exact/>
         <Route path='/post/remaining-anonymous' component={RemainingAnonymousPage} exact/>
+        <Route path='/post/cybercrime' component={CybercrimePage} exact/>
       </Switch>
       <Footer/>
     </Router>

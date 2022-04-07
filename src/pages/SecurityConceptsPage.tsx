@@ -3,7 +3,7 @@ import React from 'react'
 
 const SecurityConceptsPage = () => {
   return (
-    <Container style={{color: '#ffffff'}}>
+    <Container style={{color: '#ffffff', minHeight: '770px'}}>
       <h1 className='post-title'>Security Concepts</h1>
       <p style={{textAlign: 'center', marginBottom: '60px'}}>
         Not sure what's the difference between a DDoS and Phishing? 

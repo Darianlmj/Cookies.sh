@@ -3,7 +3,7 @@ import { Container, Link, Card } from '@mui/material';
 
 const ChallengeWriteupsPage = () => {
   return (
-    <Container style={{ color: '#ffffff' }}>
+    <Container style={{ color: '#ffffff', minHeight: '770px' }}>
       <h1 className="post-title">Challenge Writeups</h1>
       <p style={{ textAlign: 'center', marginBottom: '60px' }}>
         Writeups to CTF challenges that I've completed.

@@ -16,7 +16,7 @@ const MimikatzPage = () => {
         physical access to the target's machine.
       </p>
 
-      <Box style={{ backgroundColor: 'white', color: 'black', padding: '10px', borderRadius: '10px' }}>
+      <Box style={{ backgroundColor: 'white', color: 'black', padding: '10px 40px', borderRadius: '10px' }}>
         <h1>Reflection</h1>
         <p>
           From researching various topics about Mimikatz, passing the hash and
